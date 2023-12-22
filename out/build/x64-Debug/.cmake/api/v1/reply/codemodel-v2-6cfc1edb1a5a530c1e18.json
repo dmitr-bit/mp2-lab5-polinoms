@@ -1,0 +1,176 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "gtest",
+					"jsonFile" : "directory-gtest-Debug-2618f1bde6c55d7920ba.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "gtest",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "listlib",
+					"jsonFile" : "directory-listlib-Debug-eeb24a08bd0c7342f4ec.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "listlib",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "polinom",
+					"jsonFile" : "directory-polinom-Debug-a7b41b54b08170eb457f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "polinom",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "polinomlib",
+					"jsonFile" : "directory-polinomlib-Debug-58f8535a278925b92df5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "polinomlib",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "polinomtest",
+					"jsonFile" : "directory-polinomtest-Debug-3022aefe1ef9489ccd55.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "polinomtest",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"name" : "mp2-lab5-polinoms",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "gtest::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest-Debug-a6e8208cb339e98d5293.json",
+					"name" : "gtest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "listlib::@3dac355d71fde195affc",
+					"jsonFile" : "target-listlib-Debug-5a0d81d9f993f733ccf6.json",
+					"name" : "listlib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "polinom::@9a7300fc24d61c81a88f",
+					"jsonFile" : "target-polinom-Debug-9caa222dc243879dccb9.json",
+					"name" : "polinom",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "polinomlib::@db874fd008fc5b540a9e",
+					"jsonFile" : "target-polinomlib-Debug-995ff2734e3023462f41.json",
+					"name" : "polinomlib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "polinomtest::@ef77980beeafecb1b682",
+					"jsonFile" : "target-polinomtest-Debug-59310aee733f16790b71.json",
+					"name" : "polinomtest",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms/out/build/x64-Debug",
+		"source" : "C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

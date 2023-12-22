@@ -1,0 +1,17 @@
+C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms/out/build/x64-Debug/gtest/CMakeFiles/gtest.dir
+C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms/out/build/x64-Debug/gtest/CMakeFiles/edit_cache.dir
+C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms/out/build/x64-Debug/gtest/CMakeFiles/rebuild_cache.dir
+C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms/out/build/x64-Debug/listlib/CMakeFiles/listlib.dir
+C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms/out/build/x64-Debug/listlib/CMakeFiles/edit_cache.dir
+C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms/out/build/x64-Debug/listlib/CMakeFiles/rebuild_cache.dir
+C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms/out/build/x64-Debug/polinom/CMakeFiles/polinom.dir
+C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms/out/build/x64-Debug/polinom/CMakeFiles/edit_cache.dir
+C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms/out/build/x64-Debug/polinom/CMakeFiles/rebuild_cache.dir
+C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms/out/build/x64-Debug/polinomlib/CMakeFiles/polinomlib.dir
+C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms/out/build/x64-Debug/polinomlib/CMakeFiles/edit_cache.dir
+C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms/out/build/x64-Debug/polinomlib/CMakeFiles/rebuild_cache.dir
+C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms/out/build/x64-Debug/polinomtest/CMakeFiles/polinomtest.dir
+C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms/out/build/x64-Debug/polinomtest/CMakeFiles/edit_cache.dir
+C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms/out/build/x64-Debug/polinomtest/CMakeFiles/rebuild_cache.dir
