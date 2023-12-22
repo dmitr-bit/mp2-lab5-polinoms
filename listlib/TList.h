@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include "TNode.h"
 #include <iostream>
 using namespace std;
@@ -7,114 +7,158 @@ template<class T>
 class TList
 {
 protected:
-	TNode<T>* pFirst; // первое звено
-	TNode<T>* pCurrent; // текущее звено
-	TNode<T>* pPrevious; // звено перед текущим
-	TNode<T>* pLast; // последнее звено
-	TNode<T>* pStop; // значение указателя, означающего конец списка
-	int length; // количество звеньев в списке
+	TNode<T>* pFirst; // РїРµСЂРІРѕРµ Р·РІРµРЅРѕ
+	TNode<T>* pCurrent; // С‚РµРєСѓС‰РµРµ Р·РІРµРЅРѕ
+	TNode<T>* pPrevious; // Р·РІРµРЅРѕ РїРµСЂРµРґ С‚РµРєСѓС‰РёРј
+	TNode<T>* pLast; // РїРѕСЃР»РµРґРЅРµРµ Р·РІРµРЅРѕ
+	TNode<T>* pStop; // Р·РЅР°С‡РµРЅРёРµ СѓРєР°Р·Р°С‚РµР»СЏ, РѕР·РЅР°С‡Р°СЋС‰РµРіРѕ РєРѕРЅРµС† СЃРїРёСЃРєР°
+	int length; // РєРѕР»РёС‡РµСЃС‚РІРѕ Р·РІРµРЅСЊРµРІ РІ СЃРїРёСЃРєРµ
 
 public:
 
 	TList();
 	~TList();
-	int GetLength() { return length; }
-	bool IsEmpty(); // список пуст ?
-	// вставка звеньев
-	void InsertFirst(T item); // перед первым
-	void InsertCurrent(T item); // перед текущим 
-	void InsertLast(T item);  // вставить последним 
+	int GetLength() { return length; }   // СЃРїРёСЃРѕРє РїСѓСЃС‚ ?
+	bool IsEmpty();
+	// РІСЃС‚Р°РІРєР° Р·РІРµРЅСЊРµРІ
+	void InsertFirst(T item);   // РїРµСЂРµРґ РїРµСЂРІС‹Рј
+	void InsertCurrent(T item); // РїРµСЂРµРґ С‚РµРєСѓС‰РёРј 
+	void InsertLast(T item);  // РІСЃС‚Р°РІРёС‚СЊ РїРѕСЃР»РµРґРЅРёРј 
 
-	// удаление звеньев
-	void DeleteFirst(); // удалить первое звено 
-	void DeleteCurrent(); // удалить текущее звено
+	// СѓРґР°Р»РµРЅРёРµ Р·РІРµРЅСЊРµРІ
+	void DeleteFirst(); // СѓРґР°Р»РёС‚СЊ РїРµСЂРІРѕРµ Р·РІРµРЅРѕ 
+	void DeleteCurrent(); // СѓРґР°Р»РёС‚СЊ С‚РµРєСѓС‰РµРµ Р·РІРµРЅРѕ
 
-	void GoNext(); // сдвиг вправо текущего звена
-	// (=1 после применения GoNext для последнего звена списка)
+	void GoNext(); // СЃРґРІРёРі РІРїСЂР°РІРѕ С‚РµРєСѓС‰РµРіРѕ Р·РІРµРЅР°
+	// (=1 РїРѕСЃР»Рµ РїСЂРёРјРµРЅРµРЅРёСЏ GoNext РґР»СЏ РїРѕСЃР»РµРґРЅРµРіРѕ Р·РІРµРЅР° СЃРїРёСЃРєР°)
 
-	void Reset(); // установить на начало списка
-	bool IsEnd();  // список завершен ?
+	void Reset(); // СѓСЃС‚Р°РЅРѕРІРёС‚СЊ РЅР° РЅР°С‡Р°Р»Рѕ СЃРїРёСЃРєР°
+	bool IsEnd();  // СЃРїРёСЃРѕРє Р·Р°РІРµСЂС€РµРЅ ?
 
 	T GetCurrentItem();
 	void SetCurrentItem(T item) { pCurrent->value = item; }
 
 
 };
-template <class T>
-TList<T>::TList()
-{
 
-}
+
+template <class T>
+TList<T>::TList() : pFirst(nullptr), pCurrent(nullptr), pPrevious(nullptr), pLast(nullptr), pStop(nullptr), length(0) { }
+
 
 template <class T>
 TList<T>::~TList()
 {
-
+	while (!IsEmpty()) {
+		DeleteFirst();
+	}
 }
+
 
 template <class T>
 bool TList<T>::IsEmpty()
 {
-	return false;
+	return pFirst == nullptr;
 }
+
 
 template <class T>
 void TList<T>::InsertFirst(T item)
 {
-
+	TNode<T>* New_Node = new TNode<T>{ item, pFirst };
+	pFirst = New_Node;
+	if (length == 0) { pLast = pFirst }
+	length++;
 }
+
 
 template <class T>
 void TList<T>::InsertLast(T item)
 {
-
+	TNode<T>* New_Node = new TNode<T>{ item, nullptr };
+	if (IsEmpty()) { pFirst = pLast = New_Node; }
+	else {
+		pLast->pNext = New_Node;
+		pLast = New_Node;
+	}
+	length++;
 }
+
 
 template <class T>
 void TList<T>::InsertCurrent(T item)
 {
-	
+	if (pCurrent == nullptr || pCurrent == pFirst) {
+		InsertFirst(item);
+		return;
+	}
+	TNode<T>* New_Node = new TNode<T>{ item, pCurrent };
+	pPrevious->pNext = New_Node;
+	length++;
 }
+
 
 template <class T>
 void TList<T>::DeleteFirst()
 {
-
+	if (IsEmpty()) throw runtime_error("List is empty");
+	TNode<T>* temp = pFirst;
+	pFirst = pFirst->pNext;
+	if (pFirst == nullptr) pLast = nullptr;
+	delete temp;
+	length--;
 }
+
 
 template <class T>
 void TList<T>::DeleteCurrent()
 {
-	
+	if (pCurrent == nullptr) throw runtime_error("Current node is null");
+	if (pCurrent == pFirst) {
+		DeleteFirst();
+		return;
+	}
+	if (pCurrent == pLast) {
+		delete pCurrent;
+		pPrevious->pNext = nullptr;
+		pLast = pPrevious;
+		pCurrent = nullptr;
+	}
+	else {
+		pPrevious->pNext = pCurrent->pNext;
+		delete pCurrent;
+		pCurrent = pPrevious->pNext;
+	}
 }
+
 
 template <class T>
 T TList<T>::GetCurrentItem()
 {
-	if (pCurrent == pStop)
-		throw " ";
+	if (pCurrent == nullptr) throw runtime_error("Current node is null");
 	return pCurrent->value;
 }
+
 
 template <class T>
 void TList<T>::Reset()
 {
-
+	pCurrent = pFirst;
+	pPrevious = nullptr;
 }
+
 
 template <class T>
 void TList<T>::GoNext()
 {
-
+	pPrevious = pCurrent;
+	pCurrent = pCurrent->pNext;
+	if (pCurrent == nullptr || pCurrent == pStop) { pLast = pPrevious; }
 }
+
 
 template <class T>
 bool TList<T>::IsEnd()
 {
-	return false;
+	return pCurrent == pStop;
 }
-
-
-
-
-

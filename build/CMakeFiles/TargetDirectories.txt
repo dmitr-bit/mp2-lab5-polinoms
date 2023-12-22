@@ -1,0 +1,7 @@
+C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms/build/gtest/CMakeFiles/gtest.dir
+C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms/build/listlib/CMakeFiles/listlib.dir
+C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms/build/polinom/CMakeFiles/polinom.dir
+C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms/build/polinomlib/CMakeFiles/polinomlib.dir
+C:/Users/User/Documents/Visual Studio 2022/mp2-lab5-polinoms/build/polinomtest/CMakeFiles/polinomtest.dir
